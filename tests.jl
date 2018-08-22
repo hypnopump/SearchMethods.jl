@@ -37,13 +37,27 @@ tree = Dict(
     29 => [],
 )
 
-function expand(node, tree)
+function expand_node(node, tree)
     return tree[node]
 end
 
+function goal_check(node)
+    if node == 30 return true
+    else return false
+    end
+end
+
+function cost(node, neighbor)
+    return abs(node-neighbor)
+end
+
 # Sample test for the BFS algorithm.
-println("BFS Test: ", Search.bfs(1, tree, 90, expand))
+println("BFS Test: ", SearchMethods.bfs(1, tree, goal_check, expand_node))
 # Sample test for the DFS algorithm.
-println("DFS Test: ", Search.dfs(1, tree, 28, expand))
+println("DFS Test: ", SearchMethods.dfs(1, tree, goal_check, expand_node))
 # Sample test for the DLS algorithm
-println("DFS Test: ", Search.dfs(1, tree, 28, expand, 3))
+println("DLS Test: ", SearchMethods.dls(1, tree, goal_check, expand_node, 9))
+# Sample test for the IDS algorithm
+println("IDS Test: ", SearchMethods.ids(1, tree, goal_check, expand_node, 2))
+# Sample test for the UCS algorithm
+println("UCS Test: ", SearchMethods.ucs(1, tree, goal_check, expand_node, cost))
