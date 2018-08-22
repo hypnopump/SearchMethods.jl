@@ -4,7 +4,7 @@
 	in julia for a future package: Search.jl
 """
 
-module Search
+module SearchMethods
 
     export bfs, dfs
 

@@ -45,3 +45,5 @@ end
 println("BFS Test: ", Search.bfs(1, tree, 90, expand))
 # Sample test for the DFS algorithm.
 println("DFS Test: ", Search.dfs(1, tree, 28, expand))
+# Sample test for the DLS algorithm
+println("DFS Test: ", Search.dfs(1, tree, 28, expand, 3))
