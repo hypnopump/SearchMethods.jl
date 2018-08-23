@@ -1,5 +1,7 @@
 # SearchMethods.jl
 
+[![Coverage Status](https://coveralls.io/repos/github/EricAlcaide/SearchMethods.jl/badge.svg?branch=master)](https://coveralls.io/github/EricAlcaide/SearchMethods.jl?branch=master)
+
 The Julia package for Search Methods algorithms.
 
 ## Examples
