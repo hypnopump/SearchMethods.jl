@@ -4,6 +4,17 @@
 	in julia for a future package: SearchMethods.jl
 """
 
+
+""" Breadth First Search method algorithm. Expands always the shallowest node. 
+    Inputs:
+        * root: the initial node. Any type.
+        * tree: the search space. Any type.
+        * goal_check: checks if the goal is met. Function.
+        * expand: returns an array of new nodes. Function.
+    Returns:
+        * the goal if it's found in tree.
+        * false (boolean value) otherwise.
+"""
 function bfs(root, tree, goal_check, expand)
     explored = Set([])
     frontier = [root]
@@ -25,6 +36,16 @@ function bfs(root, tree, goal_check, expand)
 end
 
 
+""" Depth First Search method algorithm. Expands always the deepest node. 
+    Inputs:
+        * root: the initial node. Any type.
+        * tree: the search space. Any type.
+        * goal_check: checks if the goal is met. Function.
+        * expand: returns an array of new nodes. Function.
+    Returns:
+        * the goal if it's found in tree.
+        * false (boolean value) otherwise.
+"""
 function dfs(root, tree, goal_check, expand)
     explored = Set([])
     frontier = [root]
@@ -46,6 +67,18 @@ function dfs(root, tree, goal_check, expand)
 end
 
 
+""" Depth Limited Search method algorithm. Expands always the deepest node
+    until maximum depth is reached. 
+    Inputs:
+        * root: the initial node. Any type.
+        * tree: the search space. Any type.
+        * goal_check: checks if the goal is met. Function.
+        * expand: returns an array of new nodes. Function.
+        * depth: maximum depth. Integer.
+    Returns:
+        * the goal if it's found in tree.
+        * false (boolean value) otherwise.
+"""
 function dls(root, tree, goal_check, expand, depth)
 	explored = Set([])
 	# Keep track of node, depth while node in frontier
@@ -70,6 +103,20 @@ function dls(root, tree, goal_check, expand, depth)
 end
 
 
+""" Iterative Deepening Search method algorithm. Expands always the deepest node
+    until maximum depth is reached. Repeat the process iteratively increasing
+    maximum depth.
+    Inputs:
+        * root: the initial node. Any type.
+        * tree: the search space. Any type.
+        * goal_check: checks if the goal is met. Function.
+        * expand: returns an array of new nodes. Function.
+        * depth: maximum depth. Integer.
+        * it: iteratively increase depth by it. Integer.
+    Returns:
+        * the goal if it's found in tree.
+        * false (boolean value) otherwise.
+"""
 function ids(root, tree, goal_check, expand, depth; it = 1)
 	final = false
 	# Normal dfs but check if bottom of tree. If not, increase depth by it.
@@ -106,6 +153,17 @@ function ids(root, tree, goal_check, expand, depth; it = 1)
 end
 
 
+""" Uniform Cost Search method algorithm. Expands always the least cost node.
+    Inputs:
+        * root: the initial node. Any type.
+        * tree: the search space. Any type.
+        * goal_check: checks if the goal is met. Function.
+        * expand: returns an array of new nodes. Function.
+        * cost: returns the cost of expanding a node. Function.
+    Returns:
+        * the goal if it's found in tree.
+        * false (boolean value) otherwise.
+"""
 function ucs(root, tree, goal_check, expand, cost)
 	explored = Set([])
 	# Keep track of node, depth while node in frontier

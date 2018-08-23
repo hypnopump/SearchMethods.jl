@@ -4,6 +4,18 @@
 	in julia for a future package: SearchMethods.jl
 """
 
+
+""" Greedy Best-First Search method algorithm. Expands always the shallowest node. 
+    Inputs:
+        * root: the initial node. Any type.
+        * tree: the search space. Any type.
+        * goal_check: checks if the goal is met. Function.
+        * expand: returns an array of new nodes. Function.
+        * heuristic: returns the estimated cost to goal from a node. Function.
+    Returns:
+        * the goal if it's found in tree.
+        * false (boolean value) otherwise.
+"""
 function greedy(root, tree, goal_check, expand, heuristic)
 	explored = Set([])
 	# Keep track of node, depth while node in frontier
@@ -27,6 +39,19 @@ function greedy(root, tree, goal_check, expand, heuristic)
     return false
 end
 
+
+""" Greedy Best-First Search method algorithm. Expands always the shallowest node. 
+    Inputs:
+        * root: the initial node. Any type.
+        * tree: the search space. Any type.
+        * goal_check: checks if the goal is met. Function.
+        * expand: returns an array of new nodes. Function.
+        * cost: returns the cost of expanding a node. Function.
+        * heuristic: returns the estimated cost to goal from a node. Function.
+    Returns:
+        * the goal if it's found in tree.
+        * false (boolean value) otherwise.
+"""
 function a_star(root, tree, goal_check, expand, cost, heuristic)
 	explored = Set([])
 	# Keep track of node, depth while node in frontier
