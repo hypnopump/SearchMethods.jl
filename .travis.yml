@@ -4,8 +4,6 @@ os:
   - linux
   - osx
 julia:
-  - nightly
-  - release
   - 0.6
 matrix:
   allow_failures:
