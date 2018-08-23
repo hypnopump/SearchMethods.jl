@@ -6,7 +6,7 @@ os:
 julia:
   - nightly
   - release
-  - 0.6.2
+  - 0.6
 matrix:
   allow_failures:
     - julia: nightly
@@ -15,6 +15,7 @@ notifications:
 script:
 #  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
   - julia -e 'Pkg.clone(pwd())'
+  - julia -e 'Pkg.build("SearchMethods")'
   - julia -e 'Pkg.test("SearchMethods",coverage=true)'
 after_success:
   - julia -e julia -e 'Pkg.add("Documenter")'
