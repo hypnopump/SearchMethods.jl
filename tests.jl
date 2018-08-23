@@ -2,8 +2,7 @@
 # Code written entirely by Eric Alcaide.
 # An implementation of a Tree data structure for test purposes.
 
-include("uninformed.jl")
-include("informed.jl")
+include("main.jl")
 
 tree = Dict(
     1 => [2, 3, 4, 5],
@@ -51,13 +50,26 @@ function cost(node, neighbor)
     return abs(node-neighbor)
 end
 
-# Sample test for the BFS algorithm.
+function heuristic(node, goal)
+    return (abs(node-goal)/2)^2
+end
+
+# TESTS FOR UNINFORMED SEARCH ALGORITHMS
+println("UNINFORMED METHODS")
+# Sample test for the Breadth Frirst Search algorithm.
 println("BFS Test: ", SearchMethods.bfs(1, tree, goal_check, expand_node))
-# Sample test for the DFS algorithm.
+# Sample test for the Depth First Search algorithm.
 println("DFS Test: ", SearchMethods.dfs(1, tree, goal_check, expand_node))
-# Sample test for the DLS algorithm
+# Sample test for the Depth Limited Search algorithm
 println("DLS Test: ", SearchMethods.dls(1, tree, goal_check, expand_node, 9))
-# Sample test for the IDS algorithm
+# Sample test for the Iterative Deepening Search algorithm
 println("IDS Test: ", SearchMethods.ids(1, tree, goal_check, expand_node, 2))
-# Sample test for the UCS algorithm
+# Sample test for the Uniform Cost Search algorithm
 println("UCS Test: ", SearchMethods.ucs(1, tree, goal_check, expand_node, cost))
+
+# TESTS FOR INFORMED SEARCH ALGORITHMS
+println("\nINFORMED METHODS")
+# Sample test for the Greedy Best-First Search algorithm.
+println("GBS Test: ", SearchMethods.greedy(1, tree, goal_check, expand_node, heuristic))
+# Sample test for the A* Search algorithm.
+println("A*S Test: ", SearchMethods.a_star(1, tree, goal_check, expand_node, cost, heuristic))
