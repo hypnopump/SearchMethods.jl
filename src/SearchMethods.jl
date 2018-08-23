@@ -5,6 +5,8 @@ module SearchMethods
 	export bfs, dfs, dls, ids, ucs
 	export greedy, a_star
 
+	using DataStructures
+
 	include("uninformed.jl")
 	include("informed.jl")
 

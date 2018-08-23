@@ -1,8 +1,15 @@
-# SearchMethods
+# SearchMethods.jl
 
 The Julia package for Search Methods algorithms.
 
+## Examples
+
+A minimal working example can be found at the [/test](https://github.com/EricAlcaide/SearchMethods.jl/tree/master/test/) folder.
+
 ## Proto-docs
+
+We're actually working on the documentation for the project. A first (and incomplete) draft can be found at the [/docs](https://github.com/EricAlcaide/SearchMethods.jl/tree/master/docs/index.md) folder.
+
 * **Expand node**: Node expansion function must be provided with the format `expand(node)` returning a 1d-Array of child nodes.
 * **Goal check**: Goal checking function must be provided with the format `goalCheck(node)` returning a boolean value.
 * **Expansion cost**: For cost-related methods such as **UCS**, an expansion-cost function must be provided with the format `cost(node, neighbor)` returning a real number (the greater the number the costly the expansion).

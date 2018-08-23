@@ -1,8 +1,7 @@
-""" Code written entirely by Eric Alcaide.
-	
-	An implementation of Uninformed search methods algorithms
-	in julia for a future package: SearchMethods.jl
-"""
+# Code written entirely by Eric Alcaide.
+
+# An implementation of Uninformed search methods algorithms
+# in julia for a future package: SearchMethods.jl
 
 
 """ Breadth First Search method algorithm. Expands always the shallowest node. 

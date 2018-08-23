@@ -1,11 +1,11 @@
-""" Code written entirely by Eric Alcaide.
-	
-	An implementation of Informed search methods algorithms
-	in julia for a future package: SearchMethods.jl
-"""
+# Code written entirely by Eric Alcaide.
+
+# An implementation of Informed search methods algorithms
+# in julia for a future package: SearchMethods.jl
 
 
-""" Greedy Best-First Search method algorithm. Expands always the shallowest node. 
+""" Greedy Best-First Search method algorithm. Expands node that appears to
+    be closest to goal. 
     Inputs:
         * root: the initial node. Any type.
         * tree: the search space. Any type.
@@ -40,7 +40,7 @@ function greedy(root, tree, goal_check, expand, heuristic)
 end
 
 
-""" Greedy Best-First Search method algorithm. Expands always the shallowest node. 
+""" A* Search method algorithm. Expands always the shallowest node. 
     Inputs:
         * root: the initial node. Any type.
         * tree: the search space. Any type.
