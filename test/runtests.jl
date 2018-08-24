@@ -46,9 +46,16 @@ function expand_node(node, tree)
 	return tree[node]
 end
 
-# Sample goal_check function
-function goal_check(node)
+# Sample goal_check function - will return true
+function goal_check_true(node)
 	if node == 28 return true
+	else return false
+	end
+end
+
+# Sample goal_check function - will return false
+function goal_check_false(node)
+	if node == 30 return true
 	else return false
 	end
 end
@@ -69,27 +76,34 @@ tic()
 println("UNINFORMED METHODS")
 # Sample test for the Breadth Frirst Search algorithm.
 println("BFS Test")
-@time @test if SearchMethods.bfs(1, tree, goal_check, expand_node) != false return true else false end
+@time @test if SearchMethods.bfs(1, tree, goal_check_true, expand_node) != false return true else false end
+@time @test if SearchMethods.bfs(1, tree, goal_check_false, expand_node) == false return true else false end
 # Sample test for the Depth First Search algorithm.
 println("DFS Test")
-@time @test if SearchMethods.dfs(1, tree, goal_check, expand_node) != false return true else false end
+@time @test if SearchMethods.dfs(1, tree, goal_check_true, expand_node) != false return true else false end
+@time @test if SearchMethods.dfs(1, tree, goal_check_false, expand_node) == false return true else false end
 # Sample test for the Depth Limited Search algorithm
 println("DLS Test")
-@time @test if SearchMethods.dls(1, tree, goal_check, expand_node, 9) != false return true else false end
+@time @test if SearchMethods.dls(1, tree, goal_check_true, expand_node, 9) != false return true else false end
+@time @test if SearchMethods.dls(1, tree, goal_check_false, expand_node, 9) == false return true else false end
 # Sample test for the IDS algorithm
 # Sample test for the Iterative Deepening Search algorithm
 println("IDS Test")
-@time @test if SearchMethods.ids(1, tree, goal_check, expand_node, 2) != false return true else false end
+@time @test if SearchMethods.ids(1, tree, goal_check_true, expand_node, 2) != false return true else false end
+@time @test if SearchMethods.ids(1, tree, goal_check_false, expand_node, 2) == false return true else false end
 # Sample test for the Uniform Cost Search algorithm
 println("UCS Test")
-@time @test if SearchMethods.ucs(1, tree, goal_check, expand_node, cost) != false return true else false end
+@time @test if SearchMethods.ucs(1, tree, goal_check_true, expand_node, cost) != false return true else false end
+@time @test if SearchMethods.ucs(1, tree, goal_check_false, expand_node, cost) == false return true else false end
  # TESTS FOR INFORMED SEARCH ALGORITHMS
 println("\nINFORMED METHODS")
 # Sample test for the Greedy Best-First Search algorithm.
 println("GBS Test")
-@time @test if SearchMethods.greedy(1, tree, goal_check, expand_node, heuristic) != false return true else false end
+@time @test if SearchMethods.greedy(1, tree, goal_check_true, expand_node, heuristic) != false return true else false end
+@time @test if SearchMethods.greedy(1, tree, goal_check_false, expand_node, heuristic) == false return true else false end
 # Sample test for the A* Search algorithm.
 println("A*S Test")
-@time @test if SearchMethods.a_star(1, tree, goal_check, expand_node, cost, heuristic) != false return true else false end
+@time @test if SearchMethods.a_star(1, tree, goal_check_true, expand_node, cost, heuristic) != false return true else false end
+@time @test if SearchMethods.a_star(1, tree, goal_check_false, expand_node, cost, heuristic) == false return true else false end
 
 toc()

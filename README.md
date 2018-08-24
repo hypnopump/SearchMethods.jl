@@ -1,5 +1,8 @@
 # SearchMethods.jl
 
+[![SearchMethods](http://pkg.julialang.org/badges/Example_0.6.svg)](http://pkg.julialang.org/?pkg=Example)
+Linux/MacOS: [![Build Status](https://travis-ci.org/EricAlcaide/SearchMethods.jl.svg?branch=master)](https://travis-ci.org/EricAlcaide/SearchMethods.jl)
+Windows: [![Build status](https://ci.appveyor.com/api/projects/status/rfctrj4w0t2wctr1?svg=true)](https://ci.appveyor.com/project/EricAlcaide/searchmethods-jl)
 [![Coverage Status](https://coveralls.io/repos/github/EricAlcaide/SearchMethods.jl/badge.svg?branch=master)](https://coveralls.io/github/EricAlcaide/SearchMethods.jl?branch=master)
 
 The Julia package for Search Methods algorithms.
@@ -10,7 +13,7 @@ A minimal working example can be found at the [/test](https://github.com/EricAlc
 
 ## Proto-docs
 
-We're actually working on the documentation for the project. A first (and incomplete) draft can be found at the [/docs](https://github.com/EricAlcaide/SearchMethods.jl/tree/master/docs/index.md) folder.
+We're actually working on the documentation for the project. A first (and incomplete) draft can be found at the [/docs](https://github.com/EricAlcaide/SearchMethods.jl/blob/master/docs/src/index.md) folder.
 
 * **Expand node**: Node expansion function must be provided with the format `expand(node)` returning a 1d-Array of child nodes.
 * **Goal check**: Goal checking function must be provided with the format `goalCheck(node)` returning a boolean value.
