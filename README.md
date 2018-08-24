@@ -1,6 +1,7 @@
 # SearchMethods.jl
 
-[![SearchMethods](http://pkg.julialang.org/badges/Example_0.6.svg)](http://pkg.julialang.org/?pkg=Example)
+[![Latest Release](https://img.shields.io/github/release/BioJulia/BioSequences.jl.svg)](https://github.com/EricAlcaide/SearchMethods.jl/releases/latest)
+[![SearchMethods](http://pkg.julialang.org/badges/Example_0.6.svg)](http://pkg.julialang.org/?pkg=SearchMethods)
 [![MIT license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/EricAlcaide/SearchMethods.jl/blob/master/LICENSE.md) 
 [![Build Status](https://travis-ci.org/EricAlcaide/SearchMethods.jl.svg?branch=master)](https://travis-ci.org/EricAlcaide/SearchMethods.jl)
 [![Build status](https://ci.appveyor.com/api/projects/status/rfctrj4w0t2wctr1?svg=true)](https://ci.appveyor.com/project/EricAlcaide/searchmethods-jl)
@@ -20,6 +21,8 @@ We're actually working on a cool documentation for the project. A first draft ca
 ## Examples - 8 puzzle
 The 8-puzzle consists of 9 spaces to fill with numbers from 1 to 9. The resulting blank space is used to move the pieces of the puzzle.
 From a given initial state, the goal of the puzzle is to reach the goal state, in which the numbers are ordered.
+
+The code can be found [here](https://github.com/EricAlcaide/SearchMethods.jl/blob/master/example/8puzzle.jl). The example contains the BFS, DLS and IDS search methods.
 
 <center><img src="https://github.com/EricAlcaide/SearchMethods.jl/blob/master/example/8puzzle_example.png"/></center>
 

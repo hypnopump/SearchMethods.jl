@@ -6,11 +6,11 @@ using SearchMethods
 # The goal is to order the 8-puzzle from an unordered state.
 # 0 represents a blank space.
 #  |-----------------|
-#  |  1  |  2  |  3  |
+#  |  0  |  1  |  2  |
 #  |-----------------|
-#  |  4  |  5  |  6  |
+#  |  3  |  4  |  5  |
 #  |-----------------|
-#  |  7  |  8  |  0  |
+#  |  6  |  7  |  8  |
 #  |-----------------|
 
 # Formalize the initial game state as an array
