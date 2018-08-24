@@ -2,8 +2,8 @@
 
 [![SearchMethods](http://pkg.julialang.org/badges/Example_0.6.svg)](http://pkg.julialang.org/?pkg=Example)
 [![MIT license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/EricAlcaide/SearchMethods.jl/blob/master/LICENSE.md) 
-Linux/MacOS: [![Build Status](https://travis-ci.org/EricAlcaide/SearchMethods.jl.svg?branch=master)](https://travis-ci.org/EricAlcaide/SearchMethods.jl)
-Windows: [![Build status](https://ci.appveyor.com/api/projects/status/rfctrj4w0t2wctr1?svg=true)](https://ci.appveyor.com/project/EricAlcaide/searchmethods-jl)
+[![Build Status](https://travis-ci.org/EricAlcaide/SearchMethods.jl.svg?branch=master)](https://travis-ci.org/EricAlcaide/SearchMethods.jl)
+[![Build status](https://ci.appveyor.com/api/projects/status/rfctrj4w0t2wctr1?svg=true)](https://ci.appveyor.com/project/EricAlcaide/searchmethods-jl)
 [![Coverage Status](https://coveralls.io/repos/github/EricAlcaide/SearchMethods.jl/badge.svg?branch=master)](https://coveralls.io/github/EricAlcaide/SearchMethods.jl?branch=master)
 ![Lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)
 
@@ -34,9 +34,9 @@ We're actually working on a cool documentation for the project. A first draft ca
 Hey there! New ideas are welcome: open/close issues, fork the repo and share your code with a Pull Request.
 Clone this project to your computer:
  
-`git clone https://github.com/EricAlcaide/search.jl`
+`git clone https://github.com/EricAlcaide/SearchMethods.jl`
  
- By participating in this project, you agree to abide by the thoughtbot [code of conduct](https://thoughtbot.com/open-source-code-of-conduct)
+By participating in this project, you agree to abide by the thoughtbot [code of conduct](https://thoughtbot.com/open-source-code-of-conduct)
  
 ## Meta
  

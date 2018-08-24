@@ -35,9 +35,17 @@ The code can be found [here](https://github.com/EricAlcaide/SearchMethods.jl/blo
 
 Another minimal working example with a tree-like structure can be found at the [/test](https://github.com/EricAlcaide/SearchMethods.jl/tree/master/test/) folder.
 
+
+## Contribute
+Hey there! New ideas are welcome: open/close issues, fork the repository and share your changes with a Pull Request.
+Clone this project to your computer:
  
+`git clone https://github.com/EricAlcaide/SearchMethods.jl`
+ 
+By participating in this project, you agree to abide by the thoughtbot [code of conduct](https://thoughtbot.com/open-source-code-of-conduct)
+
+
 ## Meta
- 
 * **Author**: Eric Alcaide
 * **Author's GitHub Profile**: [Eric Alcaide](https://github.com/EricAlcaide/)
 * **Twitter**: [@eric_alcaide](https://twitter.com/eric_alcaide)
