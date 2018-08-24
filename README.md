@@ -9,6 +9,14 @@
 
 The Julia package for Search Methods algorithms.
 
+## Documentation
+
+We're actually working on a cool documentation for the project. A first draft can be found at the [/docs](https://github.com/EricAlcaide/SearchMethods.jl/blob/master/docs/src/index.md) folder.
+
+* **Expand node**: Node expansion function must be provided with the format `expand(node)` returning a 1d-Array of child nodes.
+* **Goal check**: Goal checking function must be provided with the format `goalCheck(node)` returning a boolean value.
+* **Expansion cost**: For cost-related methods such as **UCS**, an expansion-cost function must be provided with the format `cost(node, neighbor)` returning a real number (the greater the number the costly the expansion).
+
 ## Examples - 8 puzzle
 The 8-puzzle consists of 9 spaces to fill with numbers from 1 to 9. The resulting blank space is used to move the pieces of the puzzle.
 From a given initial state, the goal of the puzzle is to reach the goal state, in which the numbers are ordered.
@@ -21,14 +29,6 @@ From a given initial state, the goal of the puzzle is to reach the goal state, i
 The code can be found [here](https://github.com/EricAlcaide/SearchMethods.jl/blob/master/example/8puzzle.jl). The example contains the BFS, DLS and IDS search methods.
 
 Another minimal working example with a tree-like structure can be found at the [/test](https://github.com/EricAlcaide/SearchMethods.jl/tree/master/test/) folder.
-
-## Documentation
-
-We're actually working on a cool documentation for the project. A first draft can be found at the [/docs](https://github.com/EricAlcaide/SearchMethods.jl/blob/master/docs/src/index.md) folder.
-
-* **Expand node**: Node expansion function must be provided with the format `expand(node)` returning a 1d-Array of child nodes.
-* **Goal check**: Goal checking function must be provided with the format `goalCheck(node)` returning a boolean value.
-* **Expansion cost**: For cost-related methods such as **UCS**, an expansion-cost function must be provided with the format `cost(node, neighbor)` returning a real number (the greater the number the costly the expansion).
 
 ## Contribute
 Hey there! New ideas are welcome: open/close issues, fork the repo and share your code with a Pull Request.
