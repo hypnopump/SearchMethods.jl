@@ -22,9 +22,18 @@ The list below states the methods supported:
   * **A Star Search**: Expands node that appears to be the closest path through to goal.
  
 
-## Examples
+## Examples - 8 puzzle
+The 8-puzzle consists of 9 spaces to fill with numbers from 1 to 9. The resulting blank space is used to move the pieces of the puzzle.
+From a given initial state, the goal of the puzzle is to reach the goal state, in which the numbers are ordered.
 
-At the moment we have no examples to display here. But we are working on it!
+<center><img src="https://github.com/EricAlcaide/SearchMethods.jl/blob/master/example/8puzzle_example.png"/></center>
+
+* `function expand_node(node, tree)`: Expands a node by generating new child nodes. Creates a tree-like search space. Returns a 1d-Array of new nodes.
+* `function goal_check(node)`: Checks if a goal state is found. Returns true or false.
+
+The code can be found [here](https://github.com/EricAlcaide/SearchMethods.jl/blob/master/example/8puzzle.jl). The example contains the BFS, DLS and IDS search methods.
+
+Another minimal working example with a tree-like structure can be found at the [/test](https://github.com/EricAlcaide/SearchMethods.jl/tree/master/test/) folder.
 
  
 ## Meta
