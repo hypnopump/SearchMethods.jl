@@ -1,7 +1,8 @@
 # SearchMethods.jl
 
 [![Latest Release](https://img.shields.io/badge/release-v0.1.0-blue.svg)](https://github.com/EricAlcaide/SearchMethods.jl/releases/latest)
-[![SearchMethods](http://pkg.julialang.org/badges/Example_0.6.svg)](http://pkg.julialang.org/?pkg=SearchMethods)
+[![Julia v1.0](https://img.shields.io/badge/Julia%20v1.0.0-passing-brightgreen.svg)](https://docs.julialang.org/en/v1/)
+[![Julia v0.6](https://img.shields.io/badge/Julia%20v0.6-passing-brightgreen.svg)](https://docs.julialang.org/en/v0.6.4/)
 [![MIT license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/EricAlcaide/SearchMethods.jl/blob/master/LICENSE.md) 
 [![Build Status](https://travis-ci.org/EricAlcaide/SearchMethods.jl.svg?branch=master)](https://travis-ci.org/EricAlcaide/SearchMethods.jl)
 [![Build status](https://ci.appveyor.com/api/projects/status/rfctrj4w0t2wctr1?svg=true)](https://ci.appveyor.com/project/EricAlcaide/searchmethods-jl)
@@ -32,6 +33,11 @@ The code can be found [here](https://github.com/EricAlcaide/SearchMethods.jl/blo
 The code can be found [here](https://github.com/EricAlcaide/SearchMethods.jl/blob/master/example/8puzzle.jl). The example contains the BFS, DLS and IDS search methods.
 
 Another minimal working example with a tree-like structure can be found at the [/test](https://github.com/EricAlcaide/SearchMethods.jl/tree/master/test/) folder.
+
+
+## Installation
+Install **SearchMethods.jl** in your computer:
+``
 
 ## Contribute
 Hey there! New ideas are welcome: open/close issues, fork the repo and share your code with a Pull Request.
