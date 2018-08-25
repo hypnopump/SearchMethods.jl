@@ -18,6 +18,8 @@ We're actually working on a cool documentation for the project. A first draft ca
 * **Expand node**: Node expansion function must be provided with the format `expand(node)` returning a 1d-Array of child nodes.
 * **Goal check**: Goal checking function must be provided with the format `goalCheck(node)` returning a boolean value.
 * **Expansion cost**: For cost-related methods such as **UCS**, an expansion-cost function must be provided with the format `cost(node, neighbor)` returning a real number (the greater the number the costly the expansion).
+* **Heuristic**: For informed search methods such as **A Star**, a heuristic function must be provided with the format `heuristic(node, goal)` returning a real number (the greater the number the farther the goal).
+
 
 ## Examples - 8 puzzle
 The 8-puzzle consists of 9 spaces to fill with numbers from 1 to 9. The resulting blank space is used to move the pieces of the puzzle.
