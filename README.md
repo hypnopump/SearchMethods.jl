@@ -1,4 +1,4 @@
-# SearchMethods.jl
+# <img src="searchmethods_logo.png" width="30%" align="right" /> SearchMethods.jl
 
 [![Latest Release](https://img.shields.io/badge/release-v0.1.0-blue.svg)](https://github.com/EricAlcaide/SearchMethods.jl/releases/latest)
 [![Julia v1.0](https://img.shields.io/badge/Julia%20v1.0-passing-brightgreen.svg)](https://docs.julialang.org/en/v1/)
